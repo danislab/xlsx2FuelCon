@@ -1,3 +1,5 @@
+[![View xlsx2FuelCon on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://ch.mathworks.com/matlabcentral/fileexchange/81663-xlsx2fuelcon)
+
 # xlsx2FuelCon
 
 #### Convert Excel spreadsheets into xml files for the FuelCon Evaluator B test bench sequencer
