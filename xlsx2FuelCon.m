@@ -96,9 +96,13 @@ body = body(61:end);
 xmltext = [header body];
 
 % store xml file
-% fileID = fopen([pathname XMLfilename '.xml'],'w');
-fileID = fopen(xmlfile,'w');
-fprintf(fileID,'%s',xmltext);
+fid = fopen(xmlfile,'w');
+if fid == -1
+    error('Cannot open file: %s', xmlfile);
+else
+    fprintf(fid,'%s',xmltext);
+    fclose(fid);
+end
 
 
 end
