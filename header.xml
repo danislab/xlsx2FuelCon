@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="yes"?>
+<SequencerSchema xmlns="http://tempuri.org/SequencerSchema.xsd">
+  <xs:schema id="SequencerSchema" targetNamespace="http://tempuri.org/SequencerSchema.xsd" xmlns:mstns="http://tempuri.org/SequencerSchema.xsd" xmlns="http://tempuri.org/SequencerSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="SequencerSchema" msdata:IsDataSet="true" msdata:Locale="en">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="SequencerTestProgramStep" msdata:Locale="en">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ProgramStepNumber" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="100" msdata:AutoIncrementStep="100" type="xs:int" />
+                <xs:element name="SubRoutine" type="xs:string" default="Main" />
+                <xs:element name="Label" type="xs:string" default="" />
+                <xs:element name="Function" type="xs:string" default="" />
+                <xs:element name="CallFunctionName" type="xs:string" default="" />
+                <xs:element name="TagName1" type="xs:string" default="" />
+                <xs:element name="TagValue1" type="xs:double" default="0" />
+                <xs:element name="TagName2" type="xs:string" default="" />
+                <xs:element name="TagValue2" type="xs:double" default="0" />
+                <xs:element name="TagName3" type="xs:string" default="" />
+                <xs:element name="TagValue3" type="xs:double" default="0" />
+                <xs:element name="TagName4" type="xs:string" default="" />
+                <xs:element name="TagValue4" type="xs:double" default="0" />
+                <xs:element name="Jump" type="xs:string" default="" />
+                <xs:element name="JumpCycles" type="xs:int" default="0" />
+                <xs:element name="SwitchConditionTagName1" type="xs:string" default="" />
+                <xs:element name="SwitchConditionOperator1" type="xs:string" default="" />
+                <xs:element name="SwitchConditionTagValue1" type="xs:double" default="0" />
+                <xs:element name="SwitchConditionTime1" type="xs:duration" default="PT0S" />
+                <xs:element name="SwitchConditionTagName2" type="xs:string" default="" />
+                <xs:element name="SwitchConditionOperator2" type="xs:string" default="" />
+                <xs:element name="SwitchConditionTagValue2" type="xs:double" default="0" />
+                <xs:element name="SwitchConditionTime2" type="xs:duration" default="PT0S" />
+                <xs:element name="SwitchConditionTagName3" type="xs:string" default="" />
+                <xs:element name="SwitchConditionOperator3" type="xs:string" default="" />
+                <xs:element name="SwitchConditionTagValue3" type="xs:double" default="0" />
+                <xs:element name="SwitchConditionTime3" type="xs:duration" default="PT0S" />
+                <xs:element name="SwitchConditionTagName4" type="xs:string" default="" />
+                <xs:element name="SwitchConditionOperator4" type="xs:string" default="" />
+                <xs:element name="SwitchConditionTagValue4" type="xs:double" default="0" />
+                <xs:element name="SwitchConditionTime4" type="xs:duration" default="PT0S" />
+                <xs:element name="RegisterConditionTagName1" type="xs:string" default="" />
+                <xs:element name="RegisterConditionOperator1" type="xs:string" default="" />
+                <xs:element name="RegisterConditionTagValue1" type="xs:double" default="0" />
+                <xs:element name="RegisterConditionTime1" type="xs:duration" default="PT0S" />
+                <xs:element name="RegisterConditionTagName2" type="xs:string" default="" />
+                <xs:element name="RegisterConditionOperator2" type="xs:string" default="" />
+                <xs:element name="RegisterConditionTagValue2" type="xs:double" default="0" />
+                <xs:element name="RegisterConditionTime2" type="xs:duration" default="PT0S" />
+                <xs:element name="RegisterConditionTagName3" type="xs:string" default="" />
+                <xs:element name="RegisterConditionOperator3" type="xs:string" default="" />
+                <xs:element name="RegisterConditionTagValue3" type="xs:double" default="0" />
+                <xs:element name="RegisterConditionTime3" type="xs:duration" default="PT0S" />
+                <xs:element name="RegisterConditionTagName4" type="xs:string" default="" />
+                <xs:element name="RegisterConditionOperator4" type="xs:string" default="" />
+                <xs:element name="RegisterConditionTagValue4" type="xs:double" default="0" />
+                <xs:element name="RegisterConditionTime4" type="xs:duration" default="PT0S" />
+                <xs:element name="Remark" type="xs:string" default="" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SequencerSnapShotTag" msdata:Locale="en">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Tag" type="xs:string" default="C999999_X1" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="ProgramStepNumber_SubRoutineID" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:SequencerTestProgramStep" />
+        <xs:field xpath="mstns:ProgramStepNumber" />
+      </xs:unique>
+      <xs:unique name="SequencerSnapShotTagsConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:SequencerSnapShotTag" />
+        <xs:field xpath="mstns:Tag" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  
